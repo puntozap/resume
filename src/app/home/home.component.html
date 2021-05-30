@@ -1,0 +1,52 @@
+<div class="row start-xs height width">
+    <div class="col-xs-12 centered">
+        <div class="box     ">
+            <h1 class="centered" >Jose Zapata</h1>
+            <p class="centered">Resume</p>
+        </div>
+    </div>
+<div class="col-xs-offset-1 col-lg-3 col-xs-12">
+        <h2>Details</h2>
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <p class="spaces"><mat-icon>account_circle</mat-icon> Jose Ivan Zapata Ramirez</p>
+                <mat-divider></mat-divider>
+                <p class="spaces"><mat-icon>celebration</mat-icon> 1987-08-19</p>
+                <mat-divider></mat-divider>
+                <p class="spaces"><mat-icon>place</mat-icon> San Cristobal, Tachira, Venezuela</p>
+                <mat-divider></mat-divider>
+                <p class="spaces"> <mat-icon>phone_iphone</mat-icon> <a href="https://api.whatsapp.com/send?phone=584247647893&text=Hola%20que%20tal.%20vi%20tu%20curriculum%20en%20puntozap.fun%20y%20me%20interesa%20trabajar%20contigo" target="_blank"> Whatsapp</a></p>
+            </div>
+        </div>
+        <h2>Language</h2>
+        <div class="row">
+            <div class="col-md-6  col-xs-6">
+                <app-skills [data]="data[0]" ></app-skills>
+            
+            </div>  
+            <div class="col-md-6  col-xs-6">
+                <app-skills [data]="data[1]" ></app-skills>
+            </div>  
+            <div class="col-md-12  col-xs-12">
+                <br>
+                <mat-divider></mat-divider>
+            </div>  
+        </div>
+        
+        
+        
+        
+</div>
+<div class="col-md-8  col-xs-12">
+        <div class="box">
+           
+            <mat-tab-group mat-align-tabs="center">
+                <mat-tab label="Me" style="overflow: hidden !important; height: 10vh !important;"> <app-me></app-me> </mat-tab>
+                <mat-tab label="Experience"  style="overflow: hidden !important; height: 10vh !important;"> <app-experience></app-experience> </mat-tab>
+                <mat-tab label="Skills" style="overflow: hidden !important; height: 10vh !important;"> <app-list-skills></app-list-skills> </mat-tab>
+                <mat-tab label="Portfolio" style="overflow: hidden !important; height: 10vh !important;"> <app-porfolio></app-porfolio> </mat-tab>
+                <mat-tab label="Courses" style="overflow: hidden !important; height: 10vh !important;"> <app-courses></app-courses>  </mat-tab>
+              </mat-tab-group>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<mat-toolbar >
+    <button mat-icon-button class="example-icon hidden-lg" aria-label="Example icon-button with menu icon " [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item color="primary" routerLink="/" ><mat-icon>home</mat-icon>Home</button>
+        <button mat-menu-item routerLink="/about"> <mat-icon>fingerprint</mat-icon>About</button>
+        <button mat-menu-item routerLink="/blog"><mat-icon>rss_feed</mat-icon> Blog</button>
+      </mat-menu>
+    <span class="example-spacer"></span>
+    <button routerLink="/"  mat-raised-button color="primary" class="example-icon favorite-icon padding hidden-xs" aria-label="Example icon-button with heart icon">
+      Home
+    </button>
+    <button routerLink="/about" mat-raised-button color="primary" class="example-icon padding hidden-xs" aria-label="Example icon-button with share icon">
+      About
+    </button>
+    <button routerLink="/blog"  mat-raised-button color="primary" class="example-icon padding hidden-xs" aria-label="Example icon-button with share icon">
+        Blog
+    </button>
+</mat-toolbar>
